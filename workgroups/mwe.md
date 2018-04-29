@@ -98,7 +98,7 @@ Discussion of some putative `flat` constructions:
 - Equally, titles are appositive: "President ←`appos`- Obama", "Milliardär ←`appos`- Ross -`flat`→ Perot", French ←`amod`- actor ←`appos`- Gaspard -`flat`→ Ulliel <span style="color:blue">**Joakim:** Use `nmod` instead of `appos`.</span>
 - "Natural Resources Conservation Service" is a named entity with a transparent syntactic analysis. Only `amod` and `compound` (for noun-noun) to be used here.
 - `flat` should not be used for "New York", which is syntactically transparent in English (`amod`). idem to be analyzed with the usual compositional structure: United Kingdom, North Dakota, Rhode Island, Victoria Lake, Croke Park (by means of `amod`, `compound`, etc). Idem for hyphened entities: Stratford-upon-Avon or Southend-on-Sea ? They are analyzed just as their counterpart without hyphens: "Newcastle upon Tyne". The hyphens are just to be attached as punct relations.
-<span style="color:blue">**Joakim:** I am willing to defend the use of `flat` for "New York". Neither "New" nor "York" can replace the whole, so it seems to satisfy the criterion. By contrast, `amod` implies an endocentric construction.</span>
+<span style="color:blue">**Joakim:** I am willing to defend the use of `flat` for "New York". Neither "New" nor "York" can replace the whole, so it seems to satisfy the criterion. By contrast, `amod` implies an endocentric construction.</span><span style="color:pink">**Sy:** "York" can replace "New York" in every position. Of course "York" and "New York" are two diffrent cities, but it is a problem of semantics, not of syntax.</span>
 - For "Hillary Rodham Clinton", Rodham alone cannot be used alone to address this person, only Hillary Rodham. Thus Rodham should depend on Hillary but not with a `flat` relation, possibly appos is a better choice.
 - Dates such as "the 4th of July" have a transparent syntactic analysis. Equally "der 1. März 2018". "1 December 2016" however, seems headless because none of the components can replace the whole. Thus, `flat` seems like a good solution.
 - Idem for numbers such as "four thousands". These numbers might be more syntactically transparent in other languages and would receive a compositional analysis in that case.
@@ -212,9 +212,9 @@ French: "parce que" &#39;because&#39;. Reason: We cannot even assign a POS to "p
 German: als ob, nach wie vor,
 we no longer use `fixed` for: "unter anderem" because the expression is a transparent PP. Idem for the postpositions in expression such as "von x an" that should have a common compositional analysis (-case→ADP).
 
-Proposal for English: We keep "Of course"? "As of"? "As well"? "Rather than"? "Kind of"?
+Proposal for English: We keep "Of course"? "As of"? "As well"? "Rather than"? "Kind of"?<span style="color:pink">**Sy:** "rather than" is is syntactically clear: "I would rather wait here than go." "rather" is an ADV and "than" is its regime. But UD English has many inconstistencies concerniong "than"</span>
 
-And no longer should be analyzed as `fixed`:
+And no longer should be analyzed as `fixed`:<span style="color:pink">**Sy:** any/no/a little longer: no modifies the ADV longer</span>
 
 "be up to sth", "instead of", "according, due, prior to", "so that", "more than", "whether or not"
 
